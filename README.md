@@ -13,7 +13,7 @@
 - Member 2: [Nahla] - [GEC,THRISSUR]
 
 ### Hosted Project Link
-[https://navnahla-eng.github.io/tink-her-hack-temp/index.html]
+[tink-her-hack-temp/index.html]
 (login credintials username-admin password-1234)
 
 ### Project Description
