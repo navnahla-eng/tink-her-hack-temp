@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Choose Toilet</title>
+</head>
+<body>
+
+<h2>Choose Your Smart Toilet</h2>
+
+<div>
+    <button onclick="selectToilet('Toilet 1')">Toilet 1 - Bathroom A</button><br><br>
+    <button onclick="selectToilet('Toilet 2')">Toilet 2 - Bathroom B</button><br><br>
+    <button onclick="selectToilet('Toilet 3')">Toilet 3 - Bathroom C</button><br><br>
+</div>
+
+<br><br>
+<button onclick="goBack()">Back to Login</button>
+
+<script>
+    function selectToilet(toilet) {
+        alert('Selected: ' + toilet);
+        // You can add more logic here or navigate to another page
+    }
+    
+    function goBack() {
+        window.location.href = 'loginn.html';
+    }
+</script>
+
+</body>
+</html>
