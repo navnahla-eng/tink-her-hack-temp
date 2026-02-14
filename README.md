@@ -13,7 +13,7 @@
 - Member 2: [Nahla] - [GEC,THRISSUR]
 
 ### Hosted Project Link
-[tink-her-hack-temp/index.html]
+[https://tink-her-hack-temp-7hj3.onrender.com]
 (login credintials username-admin password-1234)
 
 ### Project Description
