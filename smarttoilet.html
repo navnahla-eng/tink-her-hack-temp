@@ -2,21 +2,129 @@
 <html>
 <head>
 <title>Smart Toilet Finder</title>
+
+<style>
+body {
+    font-family: Arial;
+    background-color: #f0f8ff;
+    text-align: center;
+}
+
+.search-box {
+    margin: 20px;
+}
+
+input {
+    padding: 8px;
+    width: 200px;
+}
+
+button {
+    padding: 8px;
+    background: green;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.toilet {
+    background: white;
+    width: 300px;
+    margin: 20px auto;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px gray;
+}
+</style>
+
+<script>
+// Get location
+function getLocation() {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition, showError);
+    } else {
+        document.getElementById("location").innerText = "Geolocation is not supported by this browser.";
+    }
+}
+
+function showPosition(position) {
+    let lat = position.coords.latitude;
+    let lon = position.coords.longitude;
+    document.getElementById("location").innerText = "Your Location: " + lat + ", " + lon;
+}
+
+function showError(error) {
+    switch(error.code) {
+        case error.PERMISSION_DENIED:
+            alert("User denied the request for Geolocation.");
+            break;
+        case error.POSITION_UNAVAILABLE:
+            alert("Location information is unavailable.");
+            break;
+        case error.TIMEOUT:
+            alert("The request to get user location timed out.");
+            break;
+        case error.UNKNOWN_ERROR:
+            alert("An unknown error occurred.");
+            break;
+    }
+}
+
+// Search toilets
+function searchToilet() {
+    let searchText = document.getElementById("search").value.toLowerCase();
+    let toilets = document.getElementsByClassName("toilet");
+
+    for(let i = 0; i < toilets.length; i++){
+        let name = toilets[i].getElementsByTagName("h3")[0].innerText.toLowerCase();
+        if(name.includes(searchText)){
+            toilets[i].style.display = "block";
+        } else {
+            toilets[i].style.display = "none";
+        }
+    }
+}
+
+// Logout function
+function logout() {
+    alert("Logout clicked! (Implement redirect to login page)");
+}
+</script>
+
 </head>
 
 <body>
 
-<h1>Smart Toilet Finder</h1>
+<h1>🚽 Smart Toilet Finder</h1>
 
-<p>Welcome to my website.</p>
+<!-- Search Box -->
+<div class="search-box">
+    <input type="text" id="search" placeholder="Search location...">
+    <button onclick="searchToilet()">Search</button>
+    <button onclick="logout()">Logout</button>
+</div>
 
-<button onclick="goToLogin()">Login</button>
+<!-- Location Button -->
+<button onclick="getLocation()">📍 Get My Location</button>
+<p id="location"></p>
 
-<script>
-    function goToLogin() {
-        window.location.href = 'loginn.html';
-    }
-</script>
+<!-- Toilet Cards -->
+<div class="toilet">
+<h3>Bus Stand</h3>
+<p>Status: Clean ✅</p>
+<p>Water: Available 💧</p>
+<p>Rating: ⭐⭐⭐⭐</p>
+<button onclick="alert('Complaint Submitted!')">Report Issue</button>
+</div>
+
+<div class="toilet">
+<h3>Railway Station</h3>
+<p>Status: Needs Cleaning ❌</p>
+<p>Water: Low ⚠</p>
+<p>Rating: ⭐⭐</p>
+<button onclick="alert('Complaint Submitted!')">Report Issue</button>
+</div>
 
 </body>
 </html>
