@@ -2,27 +2,27 @@
   <img src="./img.png" alt="Project Banner" width="100%">
 </p>
 
-# [Project Name] 🎯
+# [SMART TOILET] 🎯
 
 ## Basic Details
 
-### Team Name: [Name]
+### Team Name:[Theertha nahla]
 
 ### Team Members
-- Member 1: [Name] - [College]
-- Member 2: [Name] - [College]
+- Member 1: [Theertha] - [GEC,THRISSUR]
+- Member 2: [Nahla] - [GEC,THRISSUR]
 
 ### Hosted Project Link
-[mention your project hosted link here]
+[]
 
 ### Project Description
-[2-3 lines about what your project does]
+The Smart Toilet Finder uses sensors to monitor toilet conditions like cleanliness, water availability, and occupancy. This data is sent to a web application, where users can locate toilets, check their status, and report issues in real-time. It combines hardware and software to make public sanitation efficient and user-friendly]
 
 ### The Problem statement
-[What problem are you solving?]
+[Smart Toilet Finder is a web application that helps users locate nearby public toilets, check their cleanliness, water availability, and ratings. Users can also report issues, search for toilets by location, and access the service securely through a login page. It aims to make public sanitation more convenient and user-friendly]
 
 ### The Solution
-[How are you solving it?]
+[The project solves the public toilet problem by using sensors to detect cleanliness, water availability, and occupancy in real-time. This data is sent to a web application, where users can see which toilets are clean and available, search for locations, and report issues. By combining hardware sensors with software, it makes finding and maintaining public toilets easier and more efficient.]
 
 ---
 
