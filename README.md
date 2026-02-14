@@ -13,7 +13,8 @@
 - Member 2: [Nahla] - [GEC,THRISSUR]
 
 ### Hosted Project Link
-[]
+[https://navnahla-eng.github.io/tink-her-hack-temp/index.html]
+(login credintials username-admin password-1234)
 
 ### Project Description
 The Smart Toilet Finder uses sensors to monitor toilet conditions like cleanliness, water availability, and occupancy. This data is sent to a web application, where users can locate toilets, check their status, and report issues in real-time. It combines hardware and software to make public sanitation efficient and user-friendly]
